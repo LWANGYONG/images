@@ -1,8 +1,5 @@
 <?php
-
-$rand = rand(91,105);
+$rand = rand(91,150);
 $url = 'https://cdn.jsdelivr.net/gh/LWANGYONG/images/'.$rand.'.jpg';
-$img = file_get_contents($url,true);
-header("Content-Type: image/jpeg;");
-echo $img;
+header("Location:".$url);
 ?>
